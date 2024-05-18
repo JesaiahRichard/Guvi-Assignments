@@ -1,0 +1,31 @@
+1)HTTP1.1:
+*HTTP1.1 sends one request at a time over a connection.
+*It sends headers in plain text, which can be inefficient.
+*It uses plain text for communication.
+*It requires a browser to request each resource individually.
+*It has no built-in way to prioritize requests.
+*It opens a new connection for each resource, which is slower.
+*It is more widely supported because it's older.
+*It sends redundant headers with each request.
+*It doesn't have flow control mechanisms.
+*It doesn't require encryption by default.
+
+HTTP2:
+*HTTP2 HTTP/2 can send multiple requests and responses at the same time on a single connection, making it faster.
+*It compresses headers, reducing the amount of data sent, and improving speed.
+*It uses a binary format that computers can understand faster.
+*It allows the server to push multiple resources to the browser without waiting for requests, reducing latency.
+*It lets you prioritize which resources are more important, improving user experience.
+*It uses a single connection for multiple resources, reducing overhead.
+*It requires modern browsers and servers, which can limit compatibility.
+*It reduces header overhead, saving bandwidth.
+*It includes flow control to prevent overwhelming the receiver.
+*It often uses encryption (HTTPS) for better security and privacy.
+
+
+2)*JavaScript objects are composed of properties and methods, with properties storing data and methods containing functions. 
+*Internally, objects use a hash map-like structure to efficiently store and retrieve these properties and methods. 
+*The keys are converted to strings, and the values can be of any data type. 
+*Objects play a crucial role in JavaScript, enabling the creation of complex data structures and facilitating object-oriented programming paradigms.
+*Objects are mutable, meaning their properties can be modified after creation, allowing for dynamic data manipulation.
+*Objects can have functions as properties, known as methods, which enable encapsulation of behavior along with data within an object.

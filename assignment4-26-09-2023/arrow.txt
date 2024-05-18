@@ -1,0 +1,64 @@
+a)Print odd numbers in an array:
+let num=(a)=> {
+    let result=[]
+    for(let i=0;i<a.length;i++){
+        if(i%2!=0){
+             result.push(i);
+             
+        }
+  }return result
+}
+let ans=num([1,2,3,4,5,6,7,8,9])
+console.log(ans)
+
+-------------------------------------------------------------------------------------------------------------------------
+
+c)Sum of all numbers in an array
+let sum= (num) => {
+let ans=0
+for(let i=0;i<=num.length;i++){
+    ans+=i
+}return ans
+    
+}
+let b=sum([1,2,3,4,5,6,7,8,9])
+console.log(b)
+
+---------------------------------------------------------------------------------------------------------------------------
+
+d)Return all the palindromes in an array
+
+let  pallindrom= (str) =>{
+const arr=str.toLowerCase().split('')
+
+const newarr=[...arr].reverse()
+
+if(arr.join('')===newarr.join('')){
+    return console.log("It is a pallindrom")
+}else{
+    return console.log("It is not a pallindrom")
+}
+}
+let ans=pallindrom("hello")
+console.log(ans)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+d)Return all the prime numbers in an array
+let prime= (n)=> {
+        
+        if (n <= 1)
+            return console.log("Not a prime")
+        for (let i = 2; i < n; i++)
+            if (n % i == 0)
+                return console.log("Not a prime")
+  
+        return console.log("Prime number")
+    }
+    let ans=prime(5)
+    console.log(ans)
+
+
+
+
+

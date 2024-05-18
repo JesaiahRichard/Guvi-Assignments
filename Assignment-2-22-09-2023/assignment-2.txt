@@ -1,0 +1,27 @@
+Write a blog on the Difference between document & window objects
+
+Document Object:
+*Represents the web page or HTML document currently loaded in the browser. 
+*It provides access to the content and structure of the document.
+*Limited to the content and structure of the current HTML document.
+*Nested within the window object. It's a property of the window object.
+*Used for accessing and manipulating the HTML content of the current page.
+*Provides limited navigation capabilities, such as changing the location of the current document.
+*Contains properties related to the document's structure, such as documentElement, body, and head.
+*Listens for events within the HTML document, such as click or submit events.
+*Doesn't handle timing functions like setTimeout or setInterval.
+Offers methods for working with the document's structure, like getElementById and querySelector.
+*Represents the current document's URL and can be changed to navigate within the same document.
+
+Window Object:
+*Represents the browser window or the global context for JavaScript code.
+*It provides access to the browser environment and controls aspects like navigation and timing.
+*Encompasses the entire browser environment, including multiple tabs or frames if present.
+*Represents the top-level object in the browser's JavaScript object hierarchy.
+*Used for controlling the browser itself
+*Allows for controlling the navigation of the entire browser window, including opening new URLs.
+*Contains properties related to the browser environment, including location, history, and navigator
+*Listens for broader browser events, like resizing the window or unloading the page.
+*Provides functions for timing, including setTimeout and setInterval.
+*Provides methods for browser-related operations, such as open, close, and alert.
+*Represents the browser's URL and can be changed to navigate to different websites or resources.

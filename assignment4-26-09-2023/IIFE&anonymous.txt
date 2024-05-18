@@ -1,0 +1,70 @@
+Do the below programs in anonymous function & IIFE
+a)Print odd numbers in an array
+anonymous:      
+let odd=function(array){
+                  for(var i = 0 ; i< array.length ; i++){
+                        if(array[i]%2!=0){
+                           console.log(array[i])
+                        } 
+                   }
+                }
+                odd([1,2,3,4,5,6,7,8,9])
+ IIFE:
+ (function(array){
+             for(var i = 0 ; i< array.length ; i++){
+                        if(array[i]%2!=0){
+                           console.log(array[i])
+                        } 
+                   }
+             })
+             ([1,2,3,4,5,6,7,8,9])
+
+
+c)Sum of all numbers in an array
+anonymous:  
+let sum=function(array){
+                  var sum = 0;
+                  for(var i = 0 ; i< array.length ; i++){
+                     sum = sum + array[i];
+                   }
+                   return sum;
+                }
+                sum([1,2,3,4,5,6,7,8,9])
+
+IIFE:       
+(function(array){
+             var sum = 0;
+                  for(var i = 0 ; i< array.length ; i++){
+                     sum = sum + array[i];
+                   }
+                   return sum;
+             })
+             ([1,2,3,4,5,6,7,8,9])
+
+d)Return all the prime numbers in an array
+anonymous:
+                let prime= function(arr){
+                      arr= arr.filter((number) => {
+                        for (var i = 2; i <= Math.sqrt(number); i++) {
+                          if (number % i === 0) return false;
+                        }
+                        return true;
+                      });
+                      console.log(numArray);
+                  }
+                  prime([1,2,3,4,5,6,7,8,9])
+                  
+   IIFE:  
+                   (function(arr){
+                      arr = arr.filter((number) => {
+                        for (var i = 2; i <= Math.sqrt(number); i++) {
+                          if (number % i === 0) return false;
+                        }
+                        return true;
+                      });
+                      console.log(arr);
+                  })
+                   ([1,2,3,4,5,6,7,8,9])
+
+
+
